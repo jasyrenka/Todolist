@@ -1,0 +1,12 @@
+body {
+    background-color: #00CCCC;
+}
+p {
+    font-family: "Arial";
+    font-size: 20px;
+}
+p.errors {
+color:red;
+border: red 1px solid;
+width: 250px;
+}

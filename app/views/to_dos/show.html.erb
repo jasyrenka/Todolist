@@ -1,0 +1,4 @@
+<h1> zadanie: <%= @to_do.sumary%> </h1>
+<p> <%= @to_do.description%> </p>
+<%=button_to "delete", @to_do, method: :delete%>
+<%= link_to "wszystkie zadanie", to_dos_path %>

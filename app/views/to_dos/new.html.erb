@@ -1,0 +1,15 @@
+<h1>Dodaj zadanie</h1>
+<% @to_do.errors.full_messages.each do |error| %>
+<p class="errors"> <%=error%> </p>
+<%end%>
+<%= form_for(@to_do) do |f| %>
+  <div>
+    <%= f.label :sumary%>
+    <%= f.text_field :sumary%>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+  <%= f.submit "save" %>
+<% end %>
